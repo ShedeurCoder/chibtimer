@@ -1,0 +1,60 @@
+aside {
+    height: 100vh;
+    overflow-y: scroll;
+}
+table {
+    font-size: 1.3rem;
+}
+td {
+    border: 2px solid green;
+    padding: 10px;
+}
+.timer span {
+    font-size: 7rem;
+}
+#scramble {
+    font-size: 2.5rem
+}
+#seconds, #minutes {
+    font-size: 10rem
+}
+.averages td {
+    padding-inline: 0;
+    padding-block: 10px;
+}
+.bg-danger {
+    font-size: 2rem;
+}
+td button {
+    border: none;
+    font-size: 1rem;
+    margin-inline: 3px;
+}
+footer {
+    background-color: black;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 1.4rem;
+    padding: 10px;
+}
+footer a {
+    color: hsl(0, 0%, 80%);
+    margin: 5px;
+}
+footer a:hover {
+    color: white
+}
+.about p {
+    font-size: 1.3rem;
+}
+.fa-star {
+    color: grey;
+    margin: 1px;
+}
+.checked {
+    color: darkorange;
+}
+.about-footer {
+    position: relative;
+}
