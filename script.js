@@ -270,7 +270,7 @@ function addTime() {
         id('ao5').innerText = calculateAverage( removeBestAndWorst( times.slice(-5) ) )
     }
     if (times.length >= 12) {
-        id('ao5').innerText = calculateAverage( removeBestAndWorst( times.slice(-12) ) )
+        id('ao12').innerText = calculateAverage( removeBestAndWorst( times.slice(-12) ) )
     }
 }
 if (localStorage.times) {
