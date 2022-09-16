@@ -265,23 +265,35 @@ function addTime() {
     let times = localStorage.times.split(',')
     if (times.length >= 3) {
         id('mo3').innerText = calculateAverage(times.slice(-3))
+    } else {
+        id('mo3').innerText = 'N/A'
     }
     if (times.length >= 5) {
         id('ao5').innerText = calculateAverage( removeBestAndWorst( times.slice(-5) ) )
+    } else {
+        id('ao5').innerText = 'N/A'
     }
     if (times.length >= 12) {
         id('ao12').innerText = calculateAverage( removeBestAndWorst( times.slice(-12) ) )
+    } else {
+        id('ao12').innerText = 'N/A'
     }
 }
 if (localStorage.times) {
-    if (localStorage.times.split(',').length >= 3) {
-        id('mo3').innerText = calculateAverage(localStorage.times.split(',').slice(-3))
+    if (times.length >= 3) {
+        id('mo3').innerText = calculateAverage(times.slice(-3))
+    } else {
+        id('mo3').innerText = 'N/A'
     }
-    if (localStorage.times.split(',').length >= 5) {
-        id('ao5').innerText = calculateAverage( removeBestAndWorst( localStorage.times.split(',').slice(-5) ) )
+    if (times.length >= 5) {
+        id('ao5').innerText = calculateAverage( removeBestAndWorst( times.slice(-5) ) )
+    } else {
+        id('ao5').innerText = 'N/A'
     }
-    if (localStorage.times.split(',').length >= 12) {
-        id('ao12').innerText = calculateAverage( removeBestAndWorst( localStorage.times.split(',').slice(-12) ) )
+    if (times.length >= 12) {
+        id('ao12').innerText = calculateAverage( removeBestAndWorst( times.slice(-12) ) )
+    } else {
+        id('ao12').innerText = 'N/A'
     }
 }
 function plusTwo(index) {
@@ -296,14 +308,20 @@ function plusTwo(index) {
     localStorage.times.split(',').forEach(element => {
         createTimeListElement(element)
     });
-    if (localStorage.times.split(',').length >= 3) {
-        id('mo3').innerText = calculateAverage(localStorage.times.split(',').slice(-3))
+    if (times.length >= 3) {
+        id('mo3').innerText = calculateAverage(times.slice(-3))
+    } else {
+        id('mo3').innerText = 'N/A'
     }
-    if (localStorage.times.split(',').length >= 5) {
-        id('ao5').innerText = calculateAverage( removeBestAndWorst( localStorage.times.split(',').slice(-5) ) )
+    if (times.length >= 5) {
+        id('ao5').innerText = calculateAverage( removeBestAndWorst( times.slice(-5) ) )
+    } else {
+        id('ao5').innerText = 'N/A'
     }
-    if (localStorage.times.split(',').length >= 12) {
-        id('ao12').innerText = calculateAverage( removeBestAndWorst( localStorage.times.split(',').slice(-12) ) )
+    if (times.length >= 12) {
+        id('ao12').innerText = calculateAverage( removeBestAndWorst( times.slice(-12) ) )
+    } else {
+        id('ao12').innerText = 'N/A'
     }
 }
 function dnf(index) {
@@ -318,14 +336,20 @@ function dnf(index) {
     localStorage.times.split(',').forEach(element => {
         createTimeListElement(element)
     });
-    if (localStorage.times.split(',').length >= 3) {
-        id('mo3').innerText = calculateAverage(localStorage.times.split(',').slice(-3))
+    if (times.length >= 3) {
+        id('mo3').innerText = calculateAverage(times.slice(-3))
+    } else {
+        id('mo3').innerText = 'N/A'
     }
-    if (localStorage.times.split(',').length >= 5) {
-        id('ao5').innerText = calculateAverage( removeBestAndWorst( localStorage.times.split(',').slice(-5) ) )
+    if (times.length >= 5) {
+        id('ao5').innerText = calculateAverage( removeBestAndWorst( times.slice(-5) ) )
+    } else {
+        id('ao5').innerText = 'N/A'
     }
-    if (localStorage.times.split(',').length >= 12) {
-        id('ao12').innerText = calculateAverage( removeBestAndWorst( localStorage.times.split(',').slice(-12) ) )
+    if (times.length >= 12) {
+        id('ao12').innerText = calculateAverage( removeBestAndWorst( times.slice(-12) ) )
+    } else {
+        id('ao12').innerText = 'N/A'
     }
 }
 function deleteSolve(index) {
@@ -341,14 +365,20 @@ function deleteSolve(index) {
         localStorage.times.split(',').forEach(element => {
             createTimeListElement(element)
         });
-        if (localStorage.times.split(',').length >= 3) {
-            id('mo3').innerText = calculateAverage(localStorage.times.split(',').slice(-3))
+        if (times.length >= 3) {
+            id('mo3').innerText = calculateAverage(times.slice(-3))
+        } else {
+            id('mo3').innerText = 'N/A'
         }
-        if (localStorage.times.split(',').length >= 5) {
-            id('ao5').innerText = calculateAverage( removeBestAndWorst( localStorage.times.split(',').slice(-5) ) )
+        if (times.length >= 5) {
+            id('ao5').innerText = calculateAverage( removeBestAndWorst( times.slice(-5) ) )
+        } else {
+            id('ao5').innerText = 'N/A'
         }
-        if (localStorage.times.split(',').length >= 12) {
-            id('ao12').innerText = calculateAverage( removeBestAndWorst( localStorage.times.split(',').slice(-12) ) )
+        if (times.length >= 12) {
+            id('ao12').innerText = calculateAverage( removeBestAndWorst( times.slice(-12) ) )
+        } else {
+            id('ao12').innerText = 'N/A'
         }
     }
 }
