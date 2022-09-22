@@ -280,17 +280,18 @@ function addTime() {
     }
 }
 if (localStorage.times) {
-    if (localStorage.times.length >= 3) {
+    let times = localStorage.times.split(',')
+    if (times.length >= 3) {
         id('mo3').innerText = calculateAverage(times.slice(-3))
     } else {
         id('mo3').innerText = 'N/A'
     }
-    if (localStorage.times.length >= 5) {
+    if (times.length >= 5) {
         id('ao5').innerText = calculateAverage( removeBestAndWorst( times.slice(-5) ) )
     } else {
         id('ao5').innerText = 'N/A'
     }
-    if (localStorage.times.length >= 12) {
+    if (times.length >= 12) {
         id('ao12').innerText = calculateAverage( removeBestAndWorst( times.slice(-12) ) )
     } else {
         id('ao12').innerText = 'N/A'
